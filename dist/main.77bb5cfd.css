@@ -1,0 +1,24 @@
+.tree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.connector {
+  position: relative;
+  width: 50%;
+  height: 100px;
+}
+
+.connector:before {
+  content: "";
+  position: absolute;
+  width: 15%;
+  height: 80%;
+  left: 0;
+  border-left: 2px solid #080808;
+  border-bottom: 2px solid #000000;
+  border-radius: 0 0 2px 30px;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */
