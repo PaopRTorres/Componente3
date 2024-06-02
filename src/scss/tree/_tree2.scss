@@ -1,0 +1,36 @@
+/* Define un contenedor para los conectores */
+.connector-container {
+    position: relative; /* Establece la posición relativa para los elementos hijos */
+    width: 20%; /* Ancho del contenedor */
+    height: 200px; /* Altura del contenedor */
+    
+}
+
+.node {
+    position: relative;
+     width: 50%; /* Ancho del contenedor */
+    height: 25px; /* Altura del contenedor */
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #6ca6cd;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+/* Define los estilos generales de los pseudo-elementos para los conectores */
+.connector:before{
+    content: ''; /* Contenido generado para el pseudo-elemento */
+    position: absolute; /* Establece la posición absoluta con respecto al contenedor padre */
+    width: 15%; /* Ancho del pseudo-elemento */
+    border-left: 2px solid #080808; /* Estilo del borde izquierdo */
+    border-bottom: 2px solid #000000; /* Estilo del borde inferior */
+    border-radius: 0 0 2px 30px; /* Establece el radio de la esquina inferior derecha */
+}
+    
+
+/* Define los estilos específicos del conector 1 */
+.connector:before {
+    height: 70%; /* Altura del conector */
+    left: 0; /* Alinea el conector a la izquierda */
+}
