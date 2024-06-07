@@ -1,46 +1,28 @@
-/* Define un contenedor para los conectores */
-.connector-container {
+.connector-container{
+    
     position: relative; /* Establece la posición relativa para los elementos hijos */
-    width: 20%; /* Ancho del contenedor */
-    height: 200px; /* Altura del contenedor */
-}
-
-/* Define los estilos generales de los pseudo-elementos para los conectores */
-.connector:before,
-.connector-2:before,
-.connector-2:after{
-    content: ''; /* Contenido generado para el pseudo-elemento */
-    position: absolute; /* Establece la posición absoluta con respecto al contenedor padre */
-    width: 15%; /* Ancho del pseudo-elemento */
-    border-left: 2px solid #080808; /* Estilo del borde izquierdo */
-    border-bottom: 2px solid #000000; /* Estilo del borde inferior */
-    border-radius: 0 0 2px 30px; /* Establece el radio de la esquina inferior derecha */
-}
+    width: 80px;
+    height: 30px; /* Height of the connector  LARGO*/
+    left: 50px; /* Horizontal position */
+    border-left: 2px solid #000000;
     
-
-/* Define los estilos específicos del conector 1 */
-.connector:before {
-    height: 70%; /* Altura del conector */
-    left: 0; /* Alinea el conector a la izquierda */
-}
-
-/* Define los estilos específicos del conector 2 (primera línea) */
-.connector-2:before {
-    height: 40%; /* Altura del conector */
-    right: 0; /* Alinea el conector a la derecha */
-    top: 0; /* Alinea el conector en la parte superior */
-}
-
-/* Define los estilos específicos del conector 2 (última línea) */
-.connector-2:after {
-    height: 100%; /* Altura del conector */
     
-    right: 0; /* Alinea el conector a la derecha */
-    bottom: 0; /* Alinea el conector en la parte inferior */
+    
 }
 
-.connector-3:after {
-    height: 80%; /* Altura del conector */
-    left: 0; /* Alinea el conector a la izquierda */
-    top: 0; /* Alinea el conector en la parte superior */
+
+.connector::before {
+    content: '';
+    width: 20px;/*largo*/
+    /* Adding curved corners */
+   
+    height: 30%; /* Aumenta el largo hacia abajo */
+    left: -2px; /* Se mueve hacia la derecha */
+    top: 5px; /* Se mueve hacia abajo */
+    position: absolute;
+    border-bottom: 2px #000000 solid; /* Solo muestra el borde inferior */
+    border-left: 2px #000000 solid; /* Solo muestra el borde izquierdo */
+    border-radius: 8px 5px 2px 50px; /* Establece el radio de la esquina inferior derecha */
+    
 }
+

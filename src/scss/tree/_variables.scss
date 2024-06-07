@@ -1,0 +1,39 @@
+// Primitive > Sizing
+$_sizing-00: 0px;
+$_sizing-01: 4px;
+$_sizing-02: 8px;
+$_sizing-03: 12px;
+$_sizing-04: 16px;
+$_sizing-05: 20px;
+$_sizing-06: 24px;
+$_sizing-07: 28px;
+$_sizing-08: 32px;
+$_sizing-09: 40px;
+$_sizing-10: 44px;
+$_sizing-11: 999px;
+
+// Semantic > Spacing
+
+$spacing-none: $_sizing-00;
+$spacing-xx-sm: $_sizing-01;
+$spacing-x-sm: $_sizing-02;
+$spacing-sm: $_sizing-03;
+$spacing-md: $_sizing-04;
+$spacing-lg: $_sizing-05;
+$spacing-x-lg: $_sizing-06;
+$spacing-xx-lg: $_sizing-07;
+$spacing-xxx-lg: $_sizing-08;
+$spacing-xxxx-lg: $_sizing-09;
+$spacing-xxxxx-lg: $_sizing-10;
+
+// Semantic > Corner radius
+$radius-sharp: $_sizing-00;
+$radius-xx-sm: $_sizing-01;
+$radius-x-sm: $_sizing-02;
+$radius-sm: $_sizing-03;
+$radius-md: $_sizing-04;
+$radius-lg: $_sizing-05;
+$radius-x-lg: $_sizing-06;
+$radius-xx-lg: $_sizing-07;
+$radius-xxx-lg: $_sizing-08;
+$radius-round: $_sizing-11;

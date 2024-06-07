@@ -1,36 +1,42 @@
-/* Define un contenedor para los conectores */
-.connector-container {
-    position: relative; /* Establece la posición relativa para los elementos hijos */
-    width: 20%; /* Ancho del contenedor */
-    height: 200px; /* Altura del contenedor */
-    
-}
-
-.node {
+.tree ul {
+    list-style: none;
+    padding-left: 20px;
     position: relative;
-     width: 50%; /* Ancho del contenedor */
-    height: 25px; /* Altura del contenedor */
-    margin: 20px;
-    padding: 10px 20px;
-    background-color: #6ca6cd;
-    color: white;
-    border-radius: 10px;
-    text-align: center;
-    
 }
-/* Define los estilos generales de los pseudo-elementos para los conectores */
-.connector:before{
-    content: ''; /* Contenido generado para el pseudo-elemento */
-    position: absolute; /* Establece la posición absoluta con respecto al contenedor padre */
-    width: 15%; /* Ancho del pseudo-elemento */
-    border-left: 2px solid #080808; /* Estilo del borde izquierdo */
-    border-bottom: 2px solid #000000; /* Estilo del borde inferior */
-    border-radius: 0 0 2px 30px; /* Establece el radio de la esquina inferior derecha */
+
+.tree li {
+    margin: 5%;
+    padding: 0;
+    position: relative;
 }
+
+.tree li:before {
+    content: '';
+    position: absolute;
+    left: -23px;//separacion de la rama al node
+}
+
+.tree li:before {
     
 
-/* Define los estilos específicos del conector 1 */
-.connector:before {
-    height: 70%; /* Altura del conector */
-    left: 0; /* Alinea el conector a la izquierda */
+    top: 0;
+    bottom: 50%;
+    width:20px;//
+    height: 90%;//va asia abajo
+    border-left: 2px solid #970909;//arriba
+    border-bottom: 2px solid #f86161;//abajo
+    border-radius: 0 0 2px 8px;
+   // border-radius: 0 0 1px 40px;/* Establece el radio de la esquina inferior derecha */
 }
+
+
+.tree .node{// el cuadro
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid rgb(39, 60, 80);//cuadro
+    border-radius: 5px;
+    background-color: #f9f9f9;//fondo
+    font-weight: bold;
+    color: rgb(118, 151, 184);//letra
+} 
+
