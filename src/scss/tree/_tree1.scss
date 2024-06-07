@@ -13,9 +13,7 @@
 
 .connector::before {
     content: '';
-    width: 20px;/*largo*/
-    /* Adding curved corners */
-   
+    width: 20px;/*largo*/ 
     height: 30%; /* Aumenta el largo hacia abajo */
     left: -2px; /* Se mueve hacia la derecha */
     top: 5px; /* Se mueve hacia abajo */
