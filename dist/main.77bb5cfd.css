@@ -1,8 +1,8 @@
 @charset "UTF-8";
 .connector-container {
-  position: relative; /* Establece la posición relativa para los elementos hijos */
-  width: 80px;
-  height: 30px; /* Height of the connector  LARGO*/
+  position: relative;
+  width: 50px;
+  height: 15px; /*   LARGO*/
   left: 50px; /* Horizontal position */
   border-left: 2px solid #000000;
 }
@@ -10,14 +10,72 @@
 .connector::before {
   content: "";
   width: 20px; /*largo*/
-  /* Adding curved corners */
   height: 30%; /* Aumenta el largo hacia abajo */
   left: -2px; /* Se mueve hacia la derecha */
-  top: 5px; /* Se mueve hacia abajo */
+  top: 14px; /* Se mueve hacia abajo */
   position: absolute;
   border-bottom: 2px #000000 solid; /* Solo muestra el borde inferior */
   border-left: 2px #000000 solid; /* Solo muestra el borde izquierdo */
   border-radius: 8px 5px 2px 50px; /* Establece el radio de la esquina inferior derecha */
+}
+
+.connector2-container {
+  position: relative; /* Establece la posición relativa para los elementos hijos */
+  width: 50px;
+  height: 28px; /*  LARGO*/
+  left: 50px; /* Horizontal position */
+  border-left: 2px solid #000000;
+  border-radius: 3%;
+}
+
+.connector2::before {
+  content: "";
+  width: 20px; /*largo*/
+  height: 30%; /* Aumenta el largo hacia abajo */
+  left: -2px; /* Se mueve hacia la derecha */
+  top: 14px; /* Se mueve hacia abajo */
+  position: absolute;
+  border-bottom: 2px #000000 solid; /* Solo muestra el borde inferior */
+  border-left: 2px #000000 solid; /* Solo muestra el borde izquierdo */
+  border-radius: 8px 5px 5px 50px; /* Establece el radio de la esquina inferior derecha */
+}
+
+.connector3-container {
+  position: relative; /* Establece la posición relativa para los elementos hijos */
+  width: 50px;
+  height: 28px; /*  LARGO*/
+  left: 50px; /* Horizontal position */
+  border-left: 2px solid #000000;
+  border-radius: 3%;
+}
+
+.connector3::before {
+  content: "";
+  width: 20px; /*largo*/
+  /* Adding curved corners */
+  height: 30%; /* Aumenta el largo hacia abajo */
+  left: -2px; /* Se mueve hacia la derecha */
+  top: 14px; /* Se mueve hacia abajo */
+  position: absolute;
+  border-bottom: 2px #000000 solid; /* Solo muestra el borde inferior */
+  border-left: 2px #000000 solid; /* Solo muestra el borde izquierdo */
+  border-radius: 8px 5px 5px 50px; /* Establece el radio de la esquina inferior derecha */
+}
+
+.node {
+  display: inline-block;
+  padding: 1px 20px; /* Ajusta el padding para una distancia uniforme */
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  width: fit-content; /* Ajusta el tamaño del cuadro al contenido */
+  text-align: center; /* Asegura que el texto esté centrado horizontalmente */
+  white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+  position: absolute; /* Permite mover el elemento */
+  top: 10px; /* Ajusta para mover hacia abajo */
+  left: 15px; /* Ajusta para mover hacia la derecha */
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

@@ -1,42 +1,25 @@
-.tree ul {
-    list-style: none;
-    padding-left: 20px;
-    position: relative;
-}
-
-.tree li {
-    margin: 5%;
-    padding: 0;
-    position: relative;
-}
-
-.tree li:before {
-    content: '';
-    position: absolute;
-    left: -23px;//separacion de la rama al node
-}
-
-.tree li:before {
+.connector-container2{
     
-
-    top: 0;
-    bottom: 50%;
-    width:20px;//
-    height: 90%;//va asia abajo
-    border-left: 2px solid #970909;//arriba
-    border-bottom: 2px solid #f86161;//abajo
-    border-radius: 0 0 2px 8px;
-   // border-radius: 0 0 1px 40px;/* Establece el radio de la esquina inferior derecha */
+    position: relative; 
+    height: 30px; /* Height of the connector  LARGO*/
+    left: 50px; /* Horizontal position */
+    border-left: 2px solid #000000;
+    
+    
+    
 }
 
 
-.tree .node{// el cuadro
-    display: inline-block;
-    padding: 5px 10px;
-    border: 2px solid rgb(39, 60, 80);//cuadro
-    border-radius: 5px;
-    background-color: #f9f9f9;//fondo
-    font-weight: bold;
-    color: rgb(118, 151, 184);//letra
-} 
+.connector2::before {
+    content: '';
+    width: 20px;/*largo*/ 
+    height: 30%; /* Aumenta el largo hacia abajo */
+    left: -2px; /* Se mueve hacia la derecha */
+    top: 5px; /* Se mueve hacia abajo */
+    position: absolute;
+    border-bottom: 2px #000000 solid; /* Solo muestra el borde inferior */
+    border-left: 2px #000000 solid; /* Solo muestra el borde izquierdo */
+    border-radius: 8px 5px 2px 50px; /* Establece el radio de la esquina inferior derecha */
+    
+}
 
